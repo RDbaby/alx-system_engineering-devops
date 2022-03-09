@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | tr -d oo|xargs -n 1
+echo {a..z}{a..z} | xargs -n 1 | grep -v 'oo'
